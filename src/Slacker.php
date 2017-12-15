@@ -15,7 +15,14 @@ class Slacker {
 
 	private static $_instance = null;
 
-    public function __construct() {}
+    public function __construct($webhook = null, $room = null) {
+    	if ($webhook !== null) {
+			self::setWebhook($webhook);
+	    }
+	    if ($room !== null) {
+    		self::setRoom($room);
+	    }
+    }
 
     public static function getInstance ()
     {
