@@ -1,0 +1,14 @@
+{
+    "name": "fredbradley/cranleigh-slacker",
+    "description": "A class package that is used in various plugins and scripts to connect to Slack",
+    "authors": [
+        {
+            "name": "Fred Bradley",
+            "email": "hello@fredbradley.co.uk"
+        }
+    ],
+	"autoload": {
+		"psr-4": {"FredBradley\\CranleighSlacker\\": "src/"}
+},
+    "require": {}
+}
